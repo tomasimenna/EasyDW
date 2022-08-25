@@ -71,4 +71,12 @@ In this picture we can see the following:
 
 Something important to note is that in the log of the program, the table 'folders' appears as 'created' while the table 'pens' appears as appended. This is because earlier we added the table 'pens' to the database of tables to increase. This means that whenever a new file 'folders.csv' will appear in the folder, the table 'schema_1.folders' will be replaced, while whenever a new file 'pens.csv' will appear in the folder, the table 'dbo.pens' will keep the old data and append the new one.
 
+If we want to delete some table, schema, or even database, it is enough with deleting the file or folder that represents it. For example, let's delete the folder 'schema_1'.
+
+![image](https://user-images.githubusercontent.com/58273184/186655877-03adfada-a1ba-4b02-93a3-af6a9ac3d124.png)
+
+----------------------------------------------------------------------------------------------------------------------
+Commentaries:
+- The program works with multithreadnig to perform all the operations, which means that for example we don't need to wait until a big table gets uploaded to upload the next one. All of them will be uplodaded in paralell.
+- There is not limitation to the number of threads, however for SQL server it's recommended not to exceed the 25 threads (in this case, 25 operations at the same time, or upload more than 25 files at a time)
 
