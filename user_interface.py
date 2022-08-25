@@ -208,7 +208,7 @@ class MainGUI(Tk):
         self.img = PhotoImage(file = r'media\image.png')
         self.imgLabel = Label(top_right_col, image=self.img)
         self.imgLabel.grid(row=0, column=0, padx=(20), pady=(10), sticky=S)
-        team_label = Label(top_right_col, text='CIT-CC Reporting')
+        team_label = Label(top_right_col, text='Reporting tools')
         team_label.grid(row=1, column=0, padx = (20), pady=(5), sticky=N)
 
     def monitor(self):
