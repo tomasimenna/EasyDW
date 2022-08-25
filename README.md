@@ -52,3 +52,13 @@ Imagine that we want to always increase the content of the file 'pens.csv'. Then
 INSERT INTO dbo.increasing_tables VALUES ('pens')
 ```
 ![image](https://user-images.githubusercontent.com/58273184/186648436-540f13c3-4bca-4dfd-a908-e7ff818a1e9a.png)
+
+To create a new database for storing our data, inside the folder 'MyDW' we are going to create a new folder called 'database_1'
+
+We can see that this activity got recorded in the operational logs of the program, who created the database in the server.
+![image](https://user-images.githubusercontent.com/58273184/186650997-e0141385-f22f-4033-8bf0-f32f89b64202.png)
+
+Now we are going to create a subfolder in the database and drop some data there. The subfolder will represent a schema, while the data will represent the table.
+
+In the case we just drop data inside the database, it will create the tables in the schema 'dbo'.
+
