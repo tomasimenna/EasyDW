@@ -85,7 +85,7 @@ class MainGUI(Tk):
                 ex_hide_button.config(text='Hide Ex.')
                 self.ex_status = 'visible'
 
-        self.title('SIX EasyDW')
+        self.title('EasyDW')
         self.icon = PhotoImage(file = r'media\logo.png')
         self.iconphoto(False, self.icon)
 
