@@ -60,5 +60,15 @@ We can see that this activity got recorded in the operational logs of the progra
 
 Now we are going to create a subfolder in the database and drop some data there. The subfolder will represent a schema, while the data will represent the table.
 
-In the case we just drop data inside the database, it will create the tables in the schema 'dbo'.
+In the case we just drop data inside the database, it will create the tables in the schema 'dbo'. Let's check it out.
+
+![image](https://user-images.githubusercontent.com/58273184/186653128-391921fb-86f6-4213-bc6f-a53e14d3a37e.png)
+
+In this picture we can see the following:
+- We created the subfolder schema_1 --> The schema_1 got created in the database.
+- We added the file 'pens.csv' to the folder database_1 --> The table 'pens' got created in the schema 'dbo'.
+- We added the file 'folders.csv' in the subfolder 'schema_1' --> The table 'folders' got created in the schema 'schema_1'
+
+Something important to note is that in the log of the program, the table 'folders' appears as 'created' while the table 'pens' appears as appended. This is because earlier we added the table 'pens' to the database of tables to increase. This means that whenever a new file 'folders.csv' will appear in the folder, the table 'schema_1.folders' will be replaced, while whenever a new file 'pens.csv' will appear in the folder, the table 'dbo.pens' will keep the old data and append the new one.
+
 
