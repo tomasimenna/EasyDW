@@ -1,0 +1,2 @@
+pyodbc==4.0.32
+watchdog==2.1.9
