@@ -9,6 +9,7 @@ With this program, you can select a SQL Server Database and a normal folder from
 
 Currently the program is set to work only with SQL Server but with a simple modification other engines can be added.
 
+<a href="https://paypal.me/tomasimenna?country.x=PL&locale.x=en_US" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 ----------------------------------------------------------------------------------------------------------------------
 Instalation:
 
@@ -79,4 +80,3 @@ If we want to delete some table, schema, or even database, it is enough with del
 Commentaries:
 - The program works with multithreadnig to perform all the operations, which means that for example we don't need to wait until a big table gets uploaded to upload the next one. All of them will be uplodaded in paralell.
 - There is not limitation to the number of threads, however for SQL server it's recommended not to exceed the 25 threads (in this case, 25 operations at the same time, or upload more than 25 files at a time)
-
